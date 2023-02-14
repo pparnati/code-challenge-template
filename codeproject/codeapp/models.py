@@ -8,6 +8,7 @@ class WeatherData(models.Model):
     maxtempofday=models.IntegerField(default=None, blank=True, null=True)
     mintempofday = models.IntegerField(default=None, blank=True, null=True)
     precipofday = models.IntegerField(default=None, blank=True, null=True)
+    theyear = models.IntegerField(default=None, blank=True, null=True)
 
 class YieldData(models.Model):
         year = models.CharField(max_length=4)
