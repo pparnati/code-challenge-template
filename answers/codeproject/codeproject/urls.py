@@ -25,4 +25,5 @@ urlpatterns = [
     path('', include('codeapp.urls')),
     path(r'^$', schema_view)
 
+
 ]

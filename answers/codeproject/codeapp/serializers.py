@@ -1,8 +1,8 @@
-#from rest_framework import serializers
-#from rest_framework import WeatherData
+from rest_framework import serializers
+from . models import WeatherData
 
-#class WeatherDataSerlizer(serializers.ModelSerializer):
+class WeatherDataSerializer(serializers.ModelSerializer):
+    class Meta:
+        model=WeatherData
+        fields='__all__'
 
-#    class Meta:
-#        model=WeatherData
-#        fields=__all__

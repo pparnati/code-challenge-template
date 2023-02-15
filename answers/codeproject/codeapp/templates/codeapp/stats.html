@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% for statsData in statsDatas %}
+<li>{{statsData.id}}  {{statsData.averagetemp}}  {{statsData.weatherdate}} {{statsData.weatherstation}}  </li>
+{% endfor %}
+
+</body>
+</html>
