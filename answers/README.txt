@@ -9,6 +9,24 @@ stats
 pagination
 http://localhost:8000/weather/stats/?page=5
 
+CREATE TABLE codeapp_weatherdata (
+    id             INTEGER      NOT NULL
+                                PRIMARY KEY AUTOINCREMENT,
+    weatherdate    VARCHAR (8),
+    maxtempofday   INTEGER,
+    mintempofday   INTEGER,
+    precipofday    INTEGER,
+    weatherstation VARCHAR (16),
+    theyear        INTEGER      NOT NULL
+);
+
+
+CREATE TABLE codeapp_yielddata (
+    id             INTEGER     NOT NULL
+                               PRIMARY KEY AUTOINCREMENT,
+    theyear        INTEGER (4) NOT NULL,
+    yieldoftheyear INTEGER
+);
 
 CodePipeline with S3 , codedBuild  and codeDeploy
 Each pipeline stage can create aritifacts
