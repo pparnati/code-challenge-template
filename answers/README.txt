@@ -1,7 +1,8 @@
 1)codeproject is the main Django project which has application called codeapp
 2)insidde codeapp file dataloadsqlite4.py is the data loading scripts which reads from folder ../wx_data and reads every file and inserts into sqlite db.
 3)models.py has WeatherData model which corresponds to  codeapp_weatherdata table.
-
+4)views.py and urls.py inside codeapp have been modified to take care of the service api 
+ have used sqllite database 
 pagination
 http://localhost:8000/weather/?page=5
 
