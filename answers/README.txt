@@ -1,3 +1,15 @@
+I first created a Fork from the given repo .
+I then checked ou the project , i workd in teh main branch
+i ran command pip install django
+i then created db tables, i wrote the code of dataloadsqlite4.py which reads all files from teh given directory and loads each and every file.
+i split the given date first column to year column. 
+i tested with queries to get the final query necessary  for stats.
+i installed rest framework package .
+i i wrote services and tested the services.
+i integrated db query output with api services
+i did pagination but with url only not in UI,
+i tried UI but could not complete it.
+
 1)codeproject is the main Django project which has application called codeapp
 2)insidde codeapp file dataloadsqlite4.py is the data loading scripts which reads from folder ../wx_data and reads every file and inserts into sqlite db.
 3)models.py has WeatherData model which corresponds to  codeapp_weatherdata table.
